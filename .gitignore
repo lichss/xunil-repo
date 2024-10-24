@@ -1,0 +1,10 @@
+# ign all exe files
+*.exe
+
+# ign .swp .swo files
+*.swp
+
+#ign .s .i .o
+*.s
+*.i
+*.o
