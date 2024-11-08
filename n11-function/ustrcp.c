@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 char* ustrcp(char* dest,const char* src){
 
-	char* retad = dest;
 	if( dest!= NULL && src!=NULL){
-			puts("jin lai le.\n");
 			while( (*dest++ = *src++)!= '\0' );
 	}
 	else{
@@ -16,14 +15,31 @@ char* ustrcp(char* dest,const char* src){
 
 }
 
+
+char* ustrncp(char* dest,const char* src,size_t n){
+
+	if( dest!= NULL && src!=NULL){
+			while( (*dest++ = *src++)&& n-- );
+	}
+	else{
+			return NULL;
+	}
+	return dest;		
+
+}
+
+
+
 int main(){
 
 	char str1[] = "nihao.wo xiang xia ban.\n";
-	char str2[] = "woye.\n";
+	char str_z[128];
+	char str2[] = "woye";
 
-	ustrcp(str2,str1);
+
 	puts(str1);
-//	puts(str2);
+ 	ustrncp(str2,str1,999);
+	puts(str2);
 
 	return 0;
 }
