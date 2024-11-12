@@ -6,7 +6,7 @@ enum dice6{
 	THREE,
 	FOUR,
 	FIVE,
-	SIX
+	SIX = 1
 };
 int main(){
 
@@ -25,7 +25,7 @@ int main(){
 
 /*
  * 你其实可以把枚举当成单纯的宏定义。有时候没啥差别
- * 
+ *	 
  *
  *
  */

@@ -1,6 +1,6 @@
 set number
-set tabstop=2
-set shiftwidth=2
+set tabstop=3
+set shiftwidth=3
 set encoding=utf-8
 
 " INSERT mode
